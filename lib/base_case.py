@@ -1,9 +1,24 @@
+from faker import Faker
+import random
 from requests import Response
 
 
 
 class BaseCase:
     API_URL = "https://playground.learnqa.ru/api"
+    fake = Faker()
+
+    def prepare_registration_data(self, email=None):
+        if email is None:
+            email = self.fake.email()
+            
+        return {
+            'username': self.fake.user_name(),
+            'firstName': self.fake.first_name(),
+            'lastName': self.fake.last_name(),
+            'password': self.fake.password(length=10),
+            'email': email
+        }
 
     TEST_USER_EMAIL = "shams@wp.pl"
     TEST_USER_PASSWORD = "de89heu"
