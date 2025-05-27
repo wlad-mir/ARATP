@@ -1,5 +1,5 @@
 import pytest
-import requests
+from lib.my_requests import MyRequests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 
@@ -21,7 +21,7 @@ class TestUserAuth(BaseCase):
         }
 
         # Первый запрос на аутентификацию
-        login_response = requests.post(f"{self.API_URL}/user/login", data=auth_data)
+        login_response = MyRequests.post("/user/login", data=auth_data)
 
         # Проверки успешной аутентификации
         Assertions.assert_status_code(login_response, 200)
@@ -36,8 +36,8 @@ class TestUserAuth(BaseCase):
 
     def test_auth_user(self):
         """Позитивный тест проверки аутентификации"""
-        auth_check_response = requests.get(
-            f"{self.API_URL}/user/auth",
+        auth_check_response = MyRequests.get(
+            "/user/auth",
             headers={"x-csrf-token": self.token},
             cookies={"auth_sid": self.auth_sid}
         )
@@ -54,13 +54,13 @@ class TestUserAuth(BaseCase):
     def test_negative_auth_check(self, condition):
         """Негативные тесты проверки аутентификации"""
         if condition == "no_cookie":
-            response = requests.get(
-                f"{self.API_URL}/user/auth",
+            response = MyRequests.get(
+                "/user/auth",
                 headers={"x-csrf-token": self.token}
             )
         else:
-            response = requests.get(
-                f"{self.API_URL}/user/auth",
+            response = MyRequests.get(
+                "/user/auth",
                 cookies={"auth_sid": self.auth_sid}
             )
 

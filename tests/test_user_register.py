@@ -1,4 +1,4 @@
-import requests
+from lib.my_requests import MyRequests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 from faker import Faker
@@ -16,7 +16,7 @@ class TestUserRegister(BaseCase):
             'email': self.fake.email()
         }
 
-        response = requests.post(f"{self.API_URL}/user/", data=data)
+        response = MyRequests.post("/user/", data=data)
 
         Assertions.assert_status_code(response, 200)
         Assertions.assert_json_has_key(response, "id")
@@ -30,6 +30,6 @@ class TestUserRegister(BaseCase):
             'email': self.TEST_USER_EMAIL
         }
 
-        response = requests.post(f"{self.API_URL}/user/", data=data)
+        response = MyRequests.post("/user/", data=data)
 
         Assertions.assert_status_code(response, 400)

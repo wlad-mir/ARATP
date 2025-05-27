@@ -1,11 +1,11 @@
+import json
 from faker import Faker
-import random
 from requests import Response
-
-
 
 class BaseCase:
     API_URL = "https://playground.learnqa.ru/api"
+    TEST_USER_EMAIL = "shams@wp.pl"
+    TEST_USER_PASSWORD = "de89heu"
     fake = Faker()
 
     def prepare_registration_data(self, email=None):
@@ -20,10 +20,7 @@ class BaseCase:
             'email': email
         }
 
-    TEST_USER_EMAIL = "shams@wp.pl"
-    TEST_USER_PASSWORD = "de89heu"
-
-    def get_cookie(self, response:Response, cookie_name):
+    def get_cookie(self, response: Response, cookie_name):
         assert cookie_name in response.cookies, f"Can't find cookie with name {cookie_name} in the last response"
         return response.cookies[cookie_name]
 
@@ -38,4 +35,5 @@ class BaseCase:
             assert False, f"Response is not in JSON format. Response text is '{response.text}'"
 
         assert name in response_as_dict, f"Response JSON doesn't have key '{name}'"
+        
         return response_as_dict[name]
