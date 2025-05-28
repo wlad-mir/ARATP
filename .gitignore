@@ -4,4 +4,4 @@ venv
 __pycache__/
 .pytest_cashe
 logs/*
-test_result/
+test_results/
