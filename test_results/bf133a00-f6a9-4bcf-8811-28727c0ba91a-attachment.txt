@@ -1,2 +1,0 @@
-API_URL: https://playground.learnqa.ru/api
-Test user: shams@wp.pl
