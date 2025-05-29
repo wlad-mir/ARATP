@@ -10,6 +10,7 @@
 <h2> Technologies used in the project</h2>
 <p  align="center">
   <code><img width="5%" title="Python" src="icons/python.png"></code>
+  <code><img width="5%" title="Github" src="icons/github.png"></code>
   <code><img width="5%" title="Pytest" src="icons/pytest.png"></code>
   <code><img width="5%" title="Requests" src="icons/requests.png"></code>
   <code><img width="5%" title="PyCharm" src="icons/pycharm.png"></code>
@@ -23,6 +24,7 @@
 
 <!-- Test cases -->
 <h2>Automation of API methods depending on HTTP request type:</h2>
+
 * ✅ Create user
 * ✅ Logs user into the system
 * ✅ Get user id you are authorizes as OR get 0 if not authorized
@@ -41,22 +43,22 @@ docker run --rm --mount type=bind,src="project_folder",target=/tests_project/ py
 
 <!-- Docker Compose -->
 
- <img width="3%" title="Docker Compose" src="icon/docker-compose.png"><h2>Creating a project image in Docker Compose</h2>
+<img width="3%" title="Docker Compose" src="icon/docker-compose.png"><h2>Creating a project image in Docker Compose</h2>
 docker-compose build
 
-<h3>>Running tests from a project image in Docker Compose</h3>
+<h3>Running tests from a project image in Docker Compose</h3>
 docker-compose up
 
 
 <!-- Allure report -->
 <p  align="center">
-  <code><img width="3%" title="Overview" src="images/overview.png"></code>Allure report
+  <code><img title="Overview" src="images/overview.png"></code>
 
-  <code><img width="3%" title="Suites" src="images/suites.png"></code> Allure report
+  <code><img title="Suites" src="images/suites.png"></code>
 
-  <code><img width="3%" title="Graphs" src="images/graphs.png"></code> Allure report
+  <code><img title="Graphs" src="images/graphs.png"></code>
 
-  <code><img width="3%" title="Behaviors" src="images/behaviors.png"></code> Allure report
+  <code><img title="Behaviors" src="images/behaviors.png"></code>
 
-  <code><img width="3%" title="Packages" src="images/packages.png"></code> Allure report
+  <code><img title="Packages" src="images/packages.png"></code>
 </p>
