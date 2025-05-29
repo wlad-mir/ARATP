@@ -7,7 +7,7 @@
 
 <!-- Technologies used in the project -->
 
-### Technologies used in the project
+<h2> Technologies used in the project</h2>
 <p  align="center">
   <code><img width="5%" title="Python" src="icons/python.png"></code>
   <code><img width="5%" title="Pytest" src="icons/pytest.png"></code>
@@ -22,7 +22,7 @@
 
 
 <!-- Test cases -->
-Automation of API methods depending on HTTP request type:
+<h2>Automation of API methods depending on HTTP request type:</h2>
 * ✅ Create user
 * ✅ Logs user into the system
 * ✅ Get user id you are authorizes as OR get 0 if not authorized
@@ -33,30 +33,30 @@ Automation of API methods depending on HTTP request type:
 
 <!-- Docker -->
 
-### <img width="3%" title="Docker" src="icon/docker.png"> Creating a project image in Docker
+<img width="3%" title="Docker" src="icon/docker.png"><h2>Creating a project image in Docker</h2>
 docker build -t pytest_runner
 
-### Running tests from a project image in Docker
+<h3>Running tests from a project image in Docker</h3>
 docker run --rm --mount type=bind,src="project_folder",target=/tests_project/ pytest_runner
 
 <!-- Docker Compose -->
 
-### <img width="3%" title="Docker Compose" src="icon/docker-compose.png"> Creating a project image in Docker Compose
+ <img width="3%" title="Docker Compose" src="icon/docker-compose.png"><h2>Creating a project image in Docker Compose</h2>
 docker-compose build
 
-### Running tests from a project image in Docker Compose
+<h3>>Running tests from a project image in Docker Compose</h3>
 docker-compose up
 
 
 <!-- Allure report -->
+<p  align="center">
+  <code><img width="3%" title="Overview" src="images/overview.png"></code>Allure report
 
-### <img width="3%" title="Overview" src="images/overview.png"> Allure report
+  <code><img width="3%" title="Suites" src="images/suites.png"></code> Allure report
 
-### <img width="3%" title="Suites" src="images/suites.png"> Allure report
+  <code><img width="3%" title="Graphs" src="images/graphs.png"></code> Allure report
 
-### <img width="3%" title="Graphs" src="images/graphs.png"> Allure report
+  <code><img width="3%" title="Behaviors" src="images/behaviors.png"></code> Allure report
 
-### <img width="3%" title="Behaviors" src="images/behaviors.png"> Allure report
-
-### <img width="3%" title="Packages" src="images/packages.png"> Allure report
-
+  <code><img width="3%" title="Packages" src="images/packages.png"></code> Allure report
+</p>
