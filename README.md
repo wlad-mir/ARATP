@@ -24,7 +24,7 @@
 
 <!-- Test cases -->
 
-<h2>Automation of API methods depending on HTTP request type:</h2>
+### Automation of API methods depending on HTTP request type:
 
 * ✅ Create user
 * ✅ Logs user into the system
