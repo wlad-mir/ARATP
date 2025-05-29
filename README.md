@@ -23,6 +23,7 @@
 
 
 <!-- Test cases -->
+
 <h2>Automation of API methods depending on HTTP request type:</h2>
 
 * ✅ Create user
@@ -35,7 +36,7 @@
 
 <!-- Docker -->
 
-<img width="3%" title="Docker" src="icon/docker.png"><h2>Creating a project image in Docker</h2>
+<h2>Creating a project image in Docker</h2>
 docker build -t pytest_runner
 
 <h3>Running tests from a project image in Docker</h3>
@@ -43,7 +44,7 @@ docker run --rm --mount type=bind,src="project_folder",target=/tests_project/ py
 
 <!-- Docker Compose -->
 
-<img width="3%" title="Docker Compose" src="icon/docker-compose.png"><h2>Creating a project image in Docker Compose</h2>
+<h2>Creating a project image in Docker Compose</h2>
 docker-compose build
 
 <h3>Running tests from a project image in Docker Compose</h3>
@@ -51,6 +52,9 @@ docker-compose up
 
 
 <!-- Allure report -->
+
+<h2> Allure report </h2>
+
 <p  align="center">
   <code><img title="Overview" src="images/overview.png"></code>
 
