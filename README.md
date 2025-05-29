@@ -24,7 +24,7 @@
 
 <!-- Test cases -->
 
-### Automation of API methods depending on HTTP request type:
+<h2>Automation of API methods depending on HTTP request type:</h2>
 
 * ✅ Create user
 * ✅ Logs user into the system
@@ -39,7 +39,7 @@
 <h2>Creating a project image in Docker</h2>
 docker build -t pytest_runner
 
-<h3>Running tests from a project image in Docker</h3>
+### Running tests from a project image in Docker
 docker run --rm --mount type=bind,src="project_folder",target=/tests_project/ pytest_runner
 
 <!-- Docker Compose -->
@@ -47,7 +47,7 @@ docker run --rm --mount type=bind,src="project_folder",target=/tests_project/ py
 <h2>Creating a project image in Docker Compose</h2>
 docker-compose build
 
-<h3>Running tests from a project image in Docker Compose</h3>
+### Running tests from a project image in Docker Compose
 docker-compose up
 
 
