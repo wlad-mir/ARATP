@@ -1,4 +1,4 @@
-# ARATP
+# Automation of REST API testing in Python
 <h1> Automation of REST API testing in Python </h1>
 
 <a target="_blank" href="https://playground.learnqa.ru/api/map/">LearnQA API</a>
